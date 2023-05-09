@@ -12,7 +12,7 @@ public class Subsequence {
                     break;
                 }
             }
-            if (match==false)
+            if (!match)
                 return false;
         }
         return true;
@@ -28,7 +28,6 @@ public class Subsequence {
                 pointer2++;
             }
         }
-        if (pointer1==s.length()) return true;
-        return false;
+        return pointer1 == s.length();
     }
 }
