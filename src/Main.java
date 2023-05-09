@@ -1,4 +1,5 @@
-import learn.basic.sorting.SelectionSort;
+import learn.basic.leetcode75.IsomorphicStrings;
+import learn.basic.leetcode75.Subsequence;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -8,9 +9,19 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         System.out.printf("Hello and welcome! \n");
         int[] arr = {2,4,3,1,4,5};
-        SelectionSort s = new SelectionSort();
-        s.sort(arr);
-        printArray(arr);
+        //SelectionSort s = new SelectionSort();
+        //s.sort(arr);
+        //printArray(arr);
+
+        /*IsomorphicStrings iso = new IsomorphicStrings();
+        boolean isomorphic = iso.isIsomorphic("addga", "eggdf");
+        System.out.println(isomorphic);*/
+
+        Subsequence sub = new Subsequence();
+        boolean subsequence = sub.isSubsequence("abc", "fagbtc");
+        System.out.println(subsequence);
+
+
     }
     public  static void printArray(int[] inputArray) {
         // display array elements
