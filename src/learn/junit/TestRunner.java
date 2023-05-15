@@ -13,7 +13,7 @@ import java.util.Iterator;
 public class TestRunner {
     public static void main(String[] args) {
 
-        TestSuite suite = new TestSuite(TestJunit.class,TestValidPalindrome.class);
+        TestSuite suite = new TestSuite(TestJunit.class, TestValidPalindrome.class, TestRemoveDuplicates.class);
         //Result result = JUnitCore.runClasses(TestJunit.class);
         TestResult result = new TestResult();
         suite.run(result);
@@ -30,7 +30,7 @@ public class TestRunner {
     public static void resultReport(TestResult result) {
         System.out.println(result.failures().toString());
         Iterator<TestFailure> iterator = result.failures().asIterator();
-        iterator.forEachRemaining(i->{
+        iterator.forEachRemaining(i -> {
             System.out.println(i.toString());
         });
 
